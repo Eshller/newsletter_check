@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); /*font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap'); /*font-family: 'Fredericka the Great', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&display=swap'); /*font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap'); /*font-family: 'Josefin Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap'); /*font-family:Spectral; */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=B612&family=Cairo&family=Karla&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap'); /* font-family: 'Cairo', sans-serif; */
+
+/* 
+font-family: 'Arvo', serif;
+font-family: 'B612', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap'); /*font-family: 'Happy Monkey', cursive; */
+html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.fp{
+    height: 100vh;
+    /* width: 100vw; */
+    background-image:url(images/fp.PNG);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: relative;
+}
+.toc{
+    height: 100%;
+    width: 100%;
+    background: #FEF3D4;
+    /* padding-bottom: 5%; */
+}
+.heading{
+    /* padding-top: auto; */
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 6vw;
+    line-height: 131px;
+    text-align: center;
+    color: #000000;
+}
+.toc_heading{
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 65px;
+    text-align: center;
+
+    color: #000000;
+
+    opacity: 0.6;
+}
+.toc_value_index{
+    width: 100%;
+    font-family: B612;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10vh;
+    /* line-height: 146px; */
+    /* display: flex; */
+    color: #000000;
+
+    opacity: 0.1;
+}
+.Hits_and_Misses{
+    color:#000000;
+    font-family:Spectral;
+    font-size: 5vmax;
+}
+.Spectral{
+    font-family:Spectral;
+    font-weight: 400;
+}
+.HappyMonkey{
+    font-family: 'Happy Monkey', cursive;
+    font-weight: 600;
+}
+.Macbook{
+    font-family: 'Lobster', sans-serif;
+    font-size:5vmax;  
+}
+.pk{
+    font-family: 'Alegreya', serif;
+    color: #620C00;
+    font-weight: 400;
+}
+.Lato{
+    font-family: 'Lato', sans-serif;
+}
+.Karla{
+    font-family: 'Karla', sans-serif;
+}
+/* .toc_values{
+    border: 5px solid #000000;
+
+} */
+.toc_value_heading{
+    /* border: 3px solid black; */
+    /* width:300px; */
+    font-size: 4vh;
+}
+.phone{
+    float:right;
+    width:30vw;
+}
+.float_right{
+    float:right;width:30vw; height:auto;
+}
+.float_left{
+    float:left;width:30vw; height:auto;
+}
+.float_small_left{
+    float:left;width:10vw; height:auto;
+}
+.float_small_right{
+    float:right;width:10vw; height:auto;
+}
+.image10{
+
+    width: 100%;
+    height: auto;
+}
+.Arvo{
+    font-family: 'Arvo', serif;
+    font-size: 3vmin;
+}
+/* table{
+    padding: 200px;
+} */
+/* .row{
+    padding:10px;
+} */
+/* .head{
+    margin: 50px;
+    border: 5px solid black;
+    padding-right:20%;
+} */
+.table_f{
+
+    height: 100%;
+    
+} 
+table{
+    width: 100%;
+    
+}
+td {
+padding-left: 10vw;
+/* margin-left: 200px; */
+margin-right: 10vw;
+}
+.icon{
+
+    display: flex;
+    position: fixed;
+    /* border: 5px solid black; */
+    bottom: 5%;
+    right: 10%;
+}
+.dropbtn {
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropup content */
+  .dropup {
+    position: relative;
+    display: inline-block;
+    color: black;
+  }
+  
+  /* Dropup content (Hidden by Default) */
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    background-color: #FEF3D4;
+    font-family: B612;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropup */
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropup links on hover */
+  .dropup-content a:hover {background-color: #ddd}
+  
+  /* Show the dropup menu on hover */
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropup button when the dropup content is shown */
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+.first{
+    width:100%;
+    height: 100%;
+    background: #FED9D4;
+}
+.first_heading{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.first_content{
+    text-align:justify;
+    margin: 15%;
+    margin-top: 0;
+    margin-bottom:0;
+    font-size:20px;
+}
+h1{
+    font-family:Alegreya;
+    font-weight:bolder;
+}
+.second{
+    margin-top: -1%;
+    height: 100%;
+    background: #F6DFF4;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.font{
+    font-size: 15px;
+}
+
+.third{
+    margin-top: -1%;
+    height: 100%;
+    background: #C0F8E4;
+}
+.fourth{
+    margin-top: -1%;
+    height: 100%;
+    background: #FEF3D4;
+}
+.fifth{
+    margin-top: -1%;
+    height: 100%;
+    background: #FED9D4;
+}
+.sixth{
+    margin-top: -1%;
+    height: 100%;
+    background: #F6DFF4;
+}
+.seventh{
+    margin-top: -1%;
+    height: 100%;
+    background: #FED9D4;
+}
+.eighth{
+    margin-top: -1%;
+    height: 100%;
+    background: #FEF3D4;
+}
+.float{
+    float:left;
+    width: 15vw;
+}
+.float2{
+    float:right;
+    width:20vw;
+}
+.aimage{
+    margin:0;
+    margin-top:-5%;
+    float:left;
+    width: 23vw;
+}
+.image{
+    width:100%;
+    height: auto;
+}
+.image_6{
+    width:100%;
+    height: auto;
+    text-align: center;
+
+}
+
+.B612{
+    font-family: 'B612', sans-serif;
+}
+.Alegreya{
+    font-family: Alegreya; color:#620C00;
+
+}
+.Cairo{
+    font-family: 'Cairo', sans-serif;
+}
+.off-s-i{
+    font-weight: 600 !important;
+    color: #5D0055;
+    font-size: 5vmax;
+
+}
+
+.Lost_insti_culture{
+    font-family: 'Fredericka the Great', cursive;
+    color: #F94141;
+    font-size: 5vmax;
+}
+._heading{
+
+    width:100%;
+    text-align:justify;
+}
+.DS{
+    font-family: 'Fredericka the Great', cursive;
+    color: black;
+    font-size: 5vmax;
+}
+.josefin{
+    font-family: 'Josefin Slab', serif;
+}
+.icons{
+    margin-top: -10px;
+    width:5%;
+    padding-left:0;
+    margin-right: 74%;
+    float:right;
+}
+@media (max-width:950px) {
+    .dropup-content {
+        display: none;
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+        background-color: #FEF3D4;
+        font-family: B612;
+        min-width: 50vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    .toc_value_index{
+        width: 100%;
+        font-family: B612;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4vw;
+        /* line-height: 146px; */
+        /* display: flex; */
+        color: #000000;
+    
+        opacity: 0.1;
+    }
+    .toc_value_heading{
+        font-size: 3vw;
+    }
+    .icon{
+
+        display: flex;
+        position: fixed;
+        /* border: 5px solid black; */
+        bottom: 5%;
+        right: 0%;
+    }
+    
+    table{
+        width: 100%;
+        
+    }
+    td {
+    padding-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom:5vw;
+    }
+}
