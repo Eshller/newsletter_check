@@ -377,13 +377,53 @@ a, a:hover, a:focus, a:active {
     font-family: 'Josefin Slab', serif;
 }
 .icons{
-    margin-top: -10px;
+    margin-top: -0.5vh;
     width:5%;
     padding-left:0;
-    margin-right: 74%;
+    margin-right: 50vw;
     float:right;
 }
+.itc{
+    width: 3vmax;
+}
+.float_small_lefts{
+    float:left;width:10vw; height:auto;
+}
+@media (max-width:400px){
+    .icons{
+        margin-top: -10px;
+        width:5%;
+        padding-left:0;
+        margin-right: 30vw;
+        padding-right: 30vw;
+        float:right;
+    }
+}
+@media (max-width:650px){
+    .float_small_lefts{
+        transform: translateY(10px);
+        margin: 0;
+        /* margin-bottom: -10%; */
+        /* padding-bottom: 50%; */
+        float:left;width:7vw; height:auto;
+    }
+}
+
+
 @media (max-width:950px) {
+    .fp{
+    
+        width:auto;
+        height: 100vh;
+        /* width: 100vw; */
+        background-image:url(images/fpm.png);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        /* background: cover; */
+        /* background-size: 100vw; */
+        /* background-size: 100vh; */
+        /* display: relative; */
+    }
     .dropup-content {
         display: none;
         position: absolute;
